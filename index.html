@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Weather Webpage</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
@@ -17,19 +17,59 @@
   </head>
 
   <body>
-    <!-- Start of navbar -->
+     <!-- Start of navbar -->
+     <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>WeatherPy Web</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="me-auto p-2"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Comparison</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Plots
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cloudiness</a></li>
+                <li><a class="dropdown-item" href="#">Humidity</a></li>
+                <li><a class="dropdown-item" href="#">Temp</a></li>
+                <li><a class="dropdown-item" href="#">Wind</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- End of navbar -->
 
-    <!-- Start of container -->
+    <div class="container-md"></div>
+    <div class="col-lg-7 col-md-12">
+      <!-- Left Content Box -->
+      <div class="box">
+        <p>The prupose of this project was to analyze how weather chnages as you get closer to the equator. To accomplish this analysis, 
+          we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>
+        </div>
+        </div>
+<div class="container-lg"><img src="assets\images\Fig1.png" class="rounded float-start" alt="...">
+  <img src="assets\images\Fig2.png" class="rounded float-end" alt="...">
+  <img src="assets\images\Fig3.png" class="rounded float-start" alt="...">
+  <img src="assets\images\Fig4.png" class="rounded float-start" alt="..."></div>
+
           <!-- Start of Visualizations imageNav Area -->
           <!-- End of the Visualizations imageNav Area -->
     <!-- End of container -->
 
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 
 </html>
