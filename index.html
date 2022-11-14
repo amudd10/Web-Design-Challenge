@@ -20,7 +20,7 @@
      <!-- Start of navbar -->
      <nav class="navbar navbar-expand-lg bg-info">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong>WeatherPy Web</strong></a>
+        <a class="navbar-brand" href="#"><strong><h2>WeatherPy Web</h2></strong></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,10 +38,10 @@
                 Plots
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Cloudiness</a></li>
-                <li><a class="dropdown-item" href="#">Humidity</a></li>
-                <li><a class="dropdown-item" href="#">Mex Tempersture</a></li>
-                <li><a class="dropdown-item" href="#">Wind Speed</a></li>
+                <li><a class="dropdown-item" href="cloudiness.html">Lat vs. Cloudiness</a></li>
+                <li><a class="dropdown-item" href="humidity.html">Lat vs. Humidity</a></li>
+                <li><a class="dropdown-item" href="temp.html">Lat vs. Max Temperature</a></li>
+                <li><a class="dropdown-item" href="wind.html">Lat vs. Wind Speed</a></li>
               </ul>
             </li>
           </ul>
@@ -51,22 +51,41 @@
     <!-- End of navbar -->
 
     <!-- Start of container-->
-    <div class="container-md"></div>
-    <div class="col-lg-7 col-md-12">
-      <!-- Left Content Box -->
-      <div class="box">
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, 
-          we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>
-          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
-            temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
-            as well as explanations and descriptions of any trends and correlations witnessed
-          </p>
-        </div>
-        </div>
-<div class="container-lg"><img src="assets\images\Fig1.png" class="rounded float-start" alt="...">
-  <img src="assets\images\Fig2.png" class="rounded float-end" alt="...">
-  <img src="assets\images\Fig3.png" class="rounded float-start" alt="...">
-  <img src="assets\images\Fig4.png" class="rounded float-start" alt="..."></div>
+      
+        <div class="container">
+          <div class="row">
+            <div class ="col-md-6">
+              <!-- <div class="container-lg"> -->
+                <div class="box">
+                  <h3 class="title">Summary: Lattitude vs. X</h3>
+                  <hr>
+                  <a href="visualizations\temp.html">
+                  <img src="assets\images\Fig1.png" alt="..." width="500" heigh="600">
+                  </a>
+                  <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, 
+                  we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>
+                  <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
+                  temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
+                  as well as explanations and descriptions of any trends and correlations witnessed</p>
+              </div>
+              </div>
+              <div class ="col-md-3">
+                <div class="container-lg">
+                  <div class="box">
+                    <h3 class="title">Visualizations</h3>
+                    <hr>
+                  <img src="assets\images\Fig1.png" class="rounded float-start" alt="..." width="300" heigh="400">
+                  <img src="assets\images\Fig2.png" class="rounded float-start" alt="..." width="300" heigh="400">
+                  </div>
+                </div>
+                </div>
+                <div class = "col-md-3">
+                  <h3 class="title"></h3>
+                  <hr>
+                  <img src="assets\images\Fig3.png" class="rounded float-start" alt="..." width="300" heigh="400">
+                  <img src="assets\images\Fig4.png" class="rounded float-start" alt="..." width="300" heigh="400">
+                </div>
+              </div>
 
           <!-- Start of Visualizations imageNav Area -->
           <!-- End of the Visualizations imageNav Area -->
